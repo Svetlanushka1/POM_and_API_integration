@@ -1,7 +1,7 @@
 package api;
 
 import com.jayway.restassured.response.Response;
-import dto.AuthResponseDTO;
+import dto.AuthDTO;
 import dto.UserDTO;
 
 import static com.jayway.restassured.RestAssured.given;
@@ -30,7 +30,7 @@ public class UserApi extends BaseApi{
         if (responseLoginRequest == null) {
             responseLoginRequest = loginRequest(user);
         }
-        return responseLoginRequest.getBody().as(AuthResponseDTO.class).getAccessToken();
+        return responseLoginRequest.getBody().as(AuthDTO.class).getAccessToken();
     }
 
 }

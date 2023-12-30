@@ -49,7 +49,9 @@ public class BasePage {
 
     public void hideKeyBoard() {
         AppiumConfig.getDriver().hideKeyboard();
+
     }
+
 
 
 }

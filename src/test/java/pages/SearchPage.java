@@ -8,7 +8,7 @@ import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.support.FindBy;
 
 public class SearchPage extends BasePage{
-/*
+
     @FindBy(xpath = "//android.widget.ImageView[@content-desc='More options']")
     MobileElement btnOpenMenu;
     @FindBy(xpath = "//*[@text='Login']")
@@ -35,7 +35,7 @@ public class SearchPage extends BasePage{
     public void openLoginPage() {
         openMenu();
         clickLogin();
-    }*/
+    }
 }
 
 

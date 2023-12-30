@@ -5,7 +5,7 @@ import io.appium.java_client.MobileElement;
 import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends BasePage {
-/*
+
     @FindBy(xpath = "//*[@text='Email']")
     MobileElement inputEmail;
 
@@ -20,5 +20,5 @@ public class LoginPage extends BasePage {
         typeTestBase(inputEmail, 30, user.getUsername());
         typeTestBase(inputPassword, 5, user.getPassword());
         clickBase(btnYalla, 5);
-    }*/
+    }
 }
