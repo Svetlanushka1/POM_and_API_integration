@@ -1,9 +1,13 @@
 package tests;
 
+
+import data.ConfigProperties;
+import dto.UserDTO;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class LoginTests extends BaseTest{
+
 
     @Test
     public void LoginPositiveTest() {
@@ -11,4 +15,5 @@ public class LoginTests extends BaseTest{
        loginPage.login(user);
       // Assert.assertTrue();
     }
+
 }

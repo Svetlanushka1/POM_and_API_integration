@@ -1,28 +1,27 @@
 package data;
 
-
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
-import java.io.FileReader;
 
 public class ConfigProperties {
     static Properties properties = new Properties();
-    //TODO properties class
-/*
-    public static String getProperty(String param) {
-        if(properties.toString().equals("{}")) {
+    public static String getProperty(String parameters){
+        if(parameters.toString().equals("{}")){
             initProperty();
         }
-        return properties.getProperty(param);
+        return properties.getProperty(parameters);
     }
 
     private static void initProperty() {
-        String target = System.getProperty("target", "prod");
+        //Initialization property from file by link src/test/resources/%s.properties
+        String target = System.getProperty("target", "login");
         String path = String.format("src/test/resources/%s.properties", target);
-        try (FileReader fileReader = new FileReader(path)) {
+        //target will be or production or stage according file in resource
+        try(FileReader fileReader = new FileReader(path)) {
             properties.load(fileReader);
-        }catch(IOException e) {
+        } catch (IOException e){
             e.printStackTrace();
         }
-    }*/
+    }
 }

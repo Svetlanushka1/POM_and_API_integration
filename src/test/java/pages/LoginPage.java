@@ -1,5 +1,6 @@
 package pages;
 
+import data.ConfigProperties;
 import dto.UserDTO;
 import io.appium.java_client.MobileElement;
 import org.openqa.selenium.support.FindBy;
@@ -21,4 +22,10 @@ public class LoginPage extends BasePage {
         typeTestBase(inputPassword, 5, user.getPassword());
         clickBase(btnYalla, 5);
     }
+    public void loginSCV(UserDTO user){
+        typeTestBase(inputEmail, 30, ConfigProperties.getProperty("username"));
+        typeTestBase(inputEmail, 30, ConfigProperties.getProperty("password"));
+        clickBase(btnYalla, 5);
+    }
+
 }
