@@ -15,6 +15,7 @@ public class SplashPage extends BasePage{
 
 
     public boolean validateTextTitle() {
+
         return isTextContain(widgetTextView, "The Ultimate Car Rental Service",20);
     }
     public boolean validateTextVersionCorrect() {
