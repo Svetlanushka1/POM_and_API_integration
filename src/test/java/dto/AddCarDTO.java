@@ -9,6 +9,7 @@ import lombok.ToString;
 @Getter
 @Builder
 @ToString
+
 public class AddCarDTO {
     String serialNumber;
     String manufacture;

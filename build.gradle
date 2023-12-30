@@ -20,6 +20,11 @@ dependencies {
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.28'
 
     implementation 'io.appium:java-client:7.6.0'
+
+    implementation 'io.appium:java-client:7.6.0'
+
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.jayway.restassured:rest-assured:2.9.0'
 }
 
 test {

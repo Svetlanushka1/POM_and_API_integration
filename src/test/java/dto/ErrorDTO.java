@@ -9,10 +9,10 @@ import lombok.ToString;
 @Getter
 @Builder
 @ToString
-
-public class UserDTO {
-    String username;
-    String password;
-    String firstName;
-    String lastName;
+public class ErrorDTO {
+    String timestamp;
+    int status;
+    String error;
+    Object message;
+    String path;
 }

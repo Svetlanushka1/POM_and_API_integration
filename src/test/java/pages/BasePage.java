@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+
 public class BasePage {
     public BasePage() {
         PageFactory.initElements(new AppiumFieldDecorator(AppiumConfig.getDriver()), this);
@@ -31,5 +32,24 @@ public class BasePage {
             return false;
         }
     }
+
+    public void clickBase(MobileElement element, int time) {
+        wait(element, time);
+        element.click();
+    }
+
+    public void typeTestBase(MobileElement element, int time, String text) {
+//        wait(element, time);
+//        element.click();
+        clickBase(element, time);
+        element.clear();
+        element.sendKeys(text);
+        hideKeyBoard();
+    }
+
+    public void hideKeyBoard() {
+        AppiumConfig.getDriver().hideKeyboard();
+    }
+
 
 }
